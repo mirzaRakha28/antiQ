@@ -19,17 +19,17 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a id="brand" class="nav-link" href="#"><img src="assets/img/antiKb.png" alt="" class="logo"></a>
+                        <a id="brand" class="nav-link" href="#"><img style="width:53px ; height: 22px" src="assets/img/rev.png" alt="" class="logo"></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#">What's New</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Comtact Us</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
                 
