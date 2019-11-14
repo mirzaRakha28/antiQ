@@ -1,11 +1,11 @@
-    <footer class="bg-dark text-white foot p-5 " >
+    <footer class="text-white foot p-5" style="background: #00020A;">
 
         <div class="row">
 
             <div class="col-sm-4">
                 <div class="mrAuto first-last">
-                    <img src="assets/img/antiK.png" alt="" >
-                    <p class="visi" style="margin-left: 5px;">Menjual barang-barang bekas yang <br>unik, trendy,dan terjangkau</p>
+                    <img src="<?php  echo base_url('assets/img/antiK.png')?>" alt="" >
+                    <p class="visi" style="margin: 5px;">Menjual barang-barang bekas yang <br>unik, trendy, dan terjangkau</p>
                 </div>
             </div>
             <div class="col-sm-2">
