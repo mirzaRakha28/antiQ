@@ -23,7 +23,7 @@
                         <a class="nav-link" href="#">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a id="brand" class="nav-link" href="#">antiK</a>
+                        <a id="brand" class="nav-link" href="#"><img src="assets/img/antiKb.png" alt="" class="logo"></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">What's New</a>
