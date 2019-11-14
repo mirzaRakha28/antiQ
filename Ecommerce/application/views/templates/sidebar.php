@@ -19,19 +19,17 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo site_url('dashboard') ?>">Home</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo site_url('fitur_categories/category') ?>">Categories</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a id="brand" class="nav-link" href="<?php echo site_url('dashboard') ?>">
-                            <img src="<?php echo base_url('assets/img/antiKb.png') ?>" alt="" class="logo">
-                        </a>
+                        <a id="brand" class="nav-link" href="#"><img style="width:53px ; height: 22px" src="assets/img/rev.png" alt="" class="logo"></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo site_url('fitur_whatnew/whatnew') ?>">What's New</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">What's New</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo site_url('fitur_contact/contact') ?>">Contact Us</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
                 
