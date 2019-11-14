@@ -1,4 +1,4 @@
-<body id="page-top">
+<body id="page-top" style="background: #FFFAFA;">
 
 <!-- Page Wrapper -->
 <div id="wrapper">
@@ -17,7 +17,7 @@
             <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
                 <ul class="navbar-nav w-100 justify-content-center">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="<?php echo site_url('dashboard') ?>">Home</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#">Categories</a>
@@ -33,7 +33,7 @@
                     </li>
                 </ul>
                 
-                <a href="/" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-user-alt"></i></a>
+                <a href="<?php echo site_url('fitur_person/person_0') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-user-alt"></i></a>
                 
             </div>
         </nav>
