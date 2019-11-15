@@ -21,6 +21,13 @@ a{
     width: 40px;
     height: 40px;
 }
+
+
+.cstm-height-card .card-img-top {
+  height: 100px;
+  object-fit: cover;
+}
+
 .img_home{
     width: 300px;
     height: 300px;
@@ -42,3 +49,4 @@ a{
 .span{
     margin: 3%;
 }
+
