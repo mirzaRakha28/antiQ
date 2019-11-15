@@ -32,8 +32,9 @@
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
-                
-                <a href="<?php echo site_url('fitur_person/person_0') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-user-alt"></i></a>
+
+                <a href="<?php echo site_url('cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
+                <a href="<?php echo site_url('fitur_person/person_0') ?>" class="nav ml-auto px-2 justify-content-end"><i class="fas fa-user-alt"></i></a>
                 
             </div>
         </nav>
