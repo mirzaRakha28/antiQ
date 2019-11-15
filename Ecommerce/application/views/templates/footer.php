@@ -29,7 +29,12 @@
                 <div class="mrAuto first-last">
                     <p><b>NEWSLETTER:</b></p>
                     <p class="visi">Subcribe to receive updates, acces<br>to    exclusive deals, and more.</p>
-                    <button type="button" class="btn btn-yt" style="background: red;"><i class="fab fa-youtube pr-1"></i> Youtube</button>
+                    <form>
+                        <div class="form-group">
+                             <input class="form-control form-control-sm mt-2" type="text" name="email4subs" placeholder="Enter Your Email">
+                             <button class="btn btn-primary mt-2" style="background-color: #730006; border: none">Subscribe</button>
+                        </div>
+                    </form>
                 </div>
             </div>            
         </div>
