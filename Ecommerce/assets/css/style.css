@@ -50,3 +50,12 @@ a{
     margin: 3%;
 }
 
+.box-template{
+    min-height: 10px;
+    text-align: left;
+    width: 830px;
+    height:776px;
+    background: white;
+    margin: 5% 25% ;
+
+}

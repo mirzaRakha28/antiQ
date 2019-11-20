@@ -1,44 +1,26 @@
-<div class="container-contact100">
+<div class="container-contact100 ">
 
-		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
-				<span class="contact100-form-title">
-					Send Us A Message
-				</span>
+		<div class="wrap-contact100  box-template">
+			
+				<form>
+				<div class="form">
+					<div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Send</button>
+					</div>
+				</form>
 
-				<div class="wrap-input100 validate-input" data-validate="Please enter your name">
-					<input class="input100" type="text" name="name" placeholder="Full Name">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
-					<input class="input100" type="text" name="email" placeholder="E-mail">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Please enter your phone">
-					<input class="input100" type="text" name="phone" placeholder="Phone">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Please enter your message">
-					<textarea class="input100" name="message" placeholder="Your Message"></textarea>
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						<span>
-							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
-							Send
-						</span>
-					</button>
-				</div>
-			</form>
 		</div>
 	</div>
 
 
 
-	<div id="dropDownSelect1"></div>
+<div id="dropDownSelect1"></div>
 	
