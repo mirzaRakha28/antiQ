@@ -11,23 +11,29 @@
 
         <!-- Topbar -->
         <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
-            <a href="<?php echo site_url('fitur_search/search') ?>" class="navbar d-flex w-50 mr-auto"><i class="fas fa-search"></i></a>
+
+            <div class="search-box navbar d-flex w-50 mr-auto">
+
+                <input type="text" class="search-txt" placeholder="Cari..">
+                <a href="<?php echo site_url('fitur_search/search') ?>" class="navbar d-flex w-50 mr-auto search-btn"><i class="fas fa-search"></i></a>
+
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
                 <ul class="navbar-nav w-100 justify-content-center">
                     <li class="nav-item active">
-                        <a class="nav-link " href="<?php echo site_url('dashboard') ?>">Home</a>
+                        <a class="nav-link space " href="<?php echo site_url('dashboard') ?>">Home</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="<?php echo site_url('fitur_categories/category') ?>">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a id="brand" class="nav-link" href="#"><img style="width:53px ; height: 22px" src="<?php echo base_url('assets/img/rev.png') ?>" alt="" class="logo"></a>
+                        <a class="nav-link pt-1" href="<?php echo site_url('dashboard') ?>"><img style="width:53px ; height: 22px" src="<?php echo base_url('assets/img/rev.png') ?>" alt="" class="logo"></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="<?php echo site_url('fitur_whatnew/whatsnew') ?>">What's New</a>
+                        <a class="nav-link" href="<?php echo site_url('fitur_whatsnew/whatsnew') ?>">What's New</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo site_url('fitur_contact/contact') ?>">Contact Us</a>

@@ -7,7 +7,9 @@
 
         }
 
-
+        public function tambah_barang($data,$table){
+            $this->db->insert($data,$table);
+        }
     }
 
 
