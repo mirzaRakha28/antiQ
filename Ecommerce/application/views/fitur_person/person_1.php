@@ -11,31 +11,35 @@
                 <hr>
             </div>
         </div>
-        <form>
+        
     <div class="text-center" >
         <h2 class="text-judul">
             <b>Create Account</b>
-        </h1>
-        <div class="form-group input_data">
-            <input type="name" class="form-control" id="exampleInputName1" placeholder="Name">
-        </div>
-        <div class="form-group input_data">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
-        </div>
-        <div class="form-group input_data">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="form-group input_data">
-            <input type="confirmpassword" class="form-control" id="exampleInputConfirmPassowrd1" placeholder="Confirm Password">
-        </div>
-        <div class="form-group input_data">
-            <input type="gender" class="form-control" id="exampleInputGender1" placeholder="Gender">
-        </div>
-        <div class="form-group login_submit">
-            <button type="submit" class="btn btn-primary login_submit">Register</button>
-        </div>
+        </h2>
+        <form class="user" method="post" action="<?= base_url('index.php/fitur_person/person_0/registration'); ?>">
+            <div class="form-group">
+                <input type="text" class="form-control form-control-user" id="name" name="name" placeholder="Full name" value="<?= set_value('name'); ?>">
+                <?= form_error('name', '<small class="text-danger pl-3">', '</small>'); ?>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Email Address" value="<?= set_value('email'); ?>">
+                <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-user" id="alamat" name="alamat" placeholder="Address" value="<?= set_value('email'); ?>">
+                <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="password" class="form-control form-control-user" id="password1" name="password1" placeholder="Password">
+                    <?= form_error('password1', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control form-control-user" id="password2" name="password2" placeholder="Repeat Password">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger btn-user btn-block">
+                Register Account
+            </button>
         </form>
-        </div>
     </div>
-    </div>
-</div>

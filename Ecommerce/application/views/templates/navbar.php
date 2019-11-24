@@ -35,15 +35,8 @@
                 </ul>
 
                 <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
-                <!-- <a href="<?php echo site_url('fitur_person/person_0') ?>" class="nav ml-auto px-2 justify-content-end"><i class="fas fa-user-alt"></i></a> -->
-                <div class="topbar-divider d-none d-sm-block"></div>
-                <ul class="na navbar-nav navbar-right">
-                    <?php if($this->session->userdata('username')) {?>
-                        <li><div>Selamat Datang <?php echo $this->session->userdata('username') ?></div></li>
-                        <li><?php echo anchor('auth/logout'),'Logout' ?></li>
-                    <?php } else { ?>
-                        <li><?php echo anchor('auth/login'), 'Login' ?></li>
-                    <?php } ?>               
+                <a href="<?php echo site_url('fitur_person/person_0') ?>" class="nav ml-auto px-2 justify-content-end"><i class="fas fa-user-alt"></i></a>
+                
             </div>
         </nav>
 
