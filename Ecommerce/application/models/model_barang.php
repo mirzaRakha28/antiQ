@@ -6,7 +6,7 @@
             return $this->db->get('tb_barang');
 
         }
-
+                
 
     }
 
