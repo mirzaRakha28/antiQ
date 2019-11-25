@@ -8,6 +8,10 @@
             $this->load->view('dashboard');
             $this->load->view('templates/footer');
         }
+        public function fetch(){
+            $this->load->model('search_model');
+            echo $this->search_model->fetch_data($this->uri->segment(3));
+        }
 
     }
 
