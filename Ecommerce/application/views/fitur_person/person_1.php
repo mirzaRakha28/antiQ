@@ -27,7 +27,7 @@
             </div>
             <div class="form-group">
                 <input type="text" class="form-control form-control-user" id="alamat" name="alamat" placeholder="Address" value="<?= set_value('email'); ?>">
-                <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                <?= form_error('alamat', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
             <div class="form-group row">
                 <div class="col-sm-6 mb-3 mb-sm-0">

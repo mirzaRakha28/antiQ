@@ -37,12 +37,22 @@
                 </ul>
 
                 <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
-                <a href="<?php echo site_url('fitur_person/person_0') ?>" class="nav ml-auto px-2 justify-content-end"><i class="fas fa-user-alt"></i></a>
-                
+                <?php
+                    if(isset($_SESSION['email'])){
+                        if($_SESSION['email'] = ''){
+                            $this->load->view('templates/login');
+                        }
+                        else{
+                            $this->load->view('templates/non_login');
+                        }
+                    }
+                    else{
+                        $this->load->view('templates/login');
+                    }
+                ?>
             </div>
         </nav>
 
 
         <!-- Sidebar Toggle (Topbar) -->
         
-        </nav>
