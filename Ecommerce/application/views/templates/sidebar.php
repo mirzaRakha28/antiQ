@@ -9,7 +9,7 @@
     <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center" style="background-color: #ffffff">
             <a href="/" class="navbar d-flex w-50 mr-auto"><i class="fas fa-search"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
                 <span class="navbar-toggler-icon"></span>
@@ -20,10 +20,10 @@
                         <a class="nav-link" href="<?php echo site_url('dashboard') ?>">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Categories</a>
+                        <a class="nav-link" href="<?php echo site_url('fitur_categories/category') ?>">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a id="brand" class="nav-link" href="#"><img style="width:53px ; height: 22px" src="assets/img/rev.png" alt="" class="logo"></a>
+                        <a id="brand" class="nav-link" href="#"><img style="width:53px ; height: 22px" src="<?php echo base_url('assets/img/rev.png'); ?>" alt="" class="logo"></a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#">What's New</a>
@@ -33,7 +33,7 @@
                     </li>
                 </ul>
 
-                <a href="<?php echo site_url('cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
+                <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
                 <a href="<?php echo site_url('fitur_person/person_0') ?>" class="nav ml-auto px-2 justify-content-end"><i class="fas fa-user-alt"></i></a>
                 
             </div>
