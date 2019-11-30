@@ -11,43 +11,48 @@
 
         <!-- Topbar -->
         <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
-            <a href="<?php echo site_url('fitur_search/search') ?>" class="navbar d-flex w-50 mr-auto"><i class="fas fa-search"></i></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="search-box navbar d-flex w-50 mr-auto">
+
+            <input type="text" class="search-txt" placeholder="Cari..">
+            <a href="<?php echo site_url('fitur_search/search') ?>" class="navbar d-flex w-50 mr-auto search-btn"><i class="fas fa-search"></i></a>
+
+        </div>    
             <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
                 <ul class="navbar-nav w-100 justify-content-center">
                     <li class="nav-item active">
                         <a class="nav-link " href="<?php echo site_url('dashboard') ?>">Home</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item active">
                         <a class="nav-link" href="<?php echo site_url('fitur_categories/category') ?>">Categories</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a id="brand" class="nav-link" href="#"><img style="width:53px ; height: 22px" src="<?php echo base_url('assets/img/rev.png') ?>" alt="" class="logo"></a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item active">
                         <a class="nav-link" href="<?php echo site_url('fitur_whatnew/whatsnew') ?>">What's New</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="<?php echo site_url('fitur_contact/contact') ?>">Contact Us</a>
                     </li>
                 </ul>
 
                 <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
-                <!-- <a href="<?php echo site_url('fitur_person/person_0') ?>" class="nav ml-auto px-2 justify-content-end"><i class="fas fa-user-alt"></i></a> -->
-                <div class="topbar-divider d-none d-sm-block"></div>
-                <ul class="na navbar-nav navbar-right">
-                    <?php if($this->session->userdata('username')) {?>
-                        <li><div>Selamat Datang <?php echo $this->session->userdata('username') ?></div></li>
-                        <li><?php echo anchor('auth/logout'),'Logout' ?></li>
-                    <?php } else { ?>
-                        <li><?php echo anchor('auth/login'), 'Login' ?></li>
-                    <?php } ?>               
+                <?php
+                    if(isset($_SESSION['email'])){
+                        if($_SESSION['email'] = ''){
+                            $this->load->view('templates/login');
+                        }
+                        else{
+                            $this->load->view('templates/non_login');
+                        }
+                    }
+                    else{
+                        $this->load->view('templates/login');
+                    }
+                ?>
             </div>
         </nav>
 
 
         <!-- Sidebar Toggle (Topbar) -->
         
-        </nav>
