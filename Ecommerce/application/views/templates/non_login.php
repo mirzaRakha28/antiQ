@@ -1,1 +1,1 @@
-<i class="fas fa-sign-in-alt"></i>
+<a href="<?php echo site_url('fitur_person/person_0/logout') ?>" class="nav ml-auto px-2 justify-content-end"><i class="fas fa-sign-in-alt"></i></a>

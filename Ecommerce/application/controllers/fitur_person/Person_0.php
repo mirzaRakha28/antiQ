@@ -29,7 +29,7 @@
 
             $this->form_validation->set_rules('name', 'Name', 'required|trim');
             $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]', [
-                'is_unique' => 'This email has already registered!'
+                'is_unique' => 'This email   has already registered!'
             ]);
             $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim');
             $this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[3]|matches[password2]', [
@@ -43,20 +43,21 @@
                 $this->load->view('fitur_person/person_1');
                 $this->load->view('templates/footer');
             } else {
-                $email = $this->input->post('email', true);
-                $alamat = $this->input->post('alamat', true);
+                $email = $this->input->post('email',true);
+                $alamat = $this->input->post('alamat');
+                $pass   = $this->input->post('password1');
+                $nama   = $this->input->post('name');
                 $data = [
-                    'name' => htmlspecialchars($this->input->post('name', true)),
+                    'nama' => htmlspecialchars($nama),
                     'email' => htmlspecialchars($email),
-                    'image' => 'default.jpg',
-                    'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-                    'alamat' => htmlspecialchars($alamat),
-                    'role_id' => 2,
-                    'is_active' => 0,
-                    'date_created' => time()
+                    'pass' => password_hash($pass, PASSWORD_DEFAULT),
+                    'alamat' => htmlspecialchars($alamat)
+                    // 'role_id' => 2,
+                    // 'is_active' => 0,
+                    // 'date_created' => time()
                 ];
-                $this->db->insert('user', $data);
-                redirect('fitur_person/person_0/index');
+                $this->db->insert('user', $data); // insert data to database user
+                $this->index();
             }
 
         }
@@ -65,21 +66,15 @@
             $email = $this->input->post('email');
             $password = $this->input->post('password');
             $user = $this->db->get_where('user', ['email' => $email])->row_array();
-
             if ($user) {
                 if ($user['is_active'] == 0) {
-                    if (password_verify($password, $user['password'])) {
+                    if (password_verify($password, $user['pass'])) {
                         $data = [
-                        'email' => $user['email'],
-                        'role_id' => $user['role_id']
+                            'email' => $user['email'],
+                            
                         ];
-                        $_SESSION['email'] = $user['email'];
-                        $_SESSION['image'] = $user['image'];
-                        if ($user['role_id'] == 1) {
-                            redirect('fitur_admin/dasboard_admin');
-                        } else {
-                            redirect('dashboard');
-                        }
+                        $this->session->isLogin = true;
+                        redirect('fitur_admin/dasboard_admin');
                     } else {
                         redirect('fitur_person/person_0');
                     }
@@ -87,6 +82,12 @@
             } else {
                 redirect('fitur_person/person_0');
             }
+        }
+
+        public function logout()
+        {
+            $this->session->isLogin = false;
+            $this->index();# code...
         }
     }
 

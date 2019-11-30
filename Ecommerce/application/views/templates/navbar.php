@@ -38,17 +38,18 @@
 
                 <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
                 <?php
-                    if(isset($_SESSION['email'])){
-                        if($_SESSION['email'] = ''){
-                            $this->load->view('templates/login');
-                        }
-                        else{
+                    
+                    // var_dump($this->session->isLogin); die();
+
+                    if(isset($this->session->isLogin)){
+                        if($this->session->isLogin){
                             $this->load->view('templates/non_login');
                         }
+                        else{
+                            $this->load->view('templates/login');
+                        }
                     }
-                    else{
-                        $this->load->view('templates/login');
-                    }
+                    
                 ?>
             </div>
         </nav>
