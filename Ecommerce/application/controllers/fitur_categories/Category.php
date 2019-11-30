@@ -9,6 +9,18 @@
             $this->load->view('fitur_categories/category',$data);
             $this->load->view('templates/footer');
         }
+        public function keranjang ($id){
+            $barang = $this->model_barang->find($id);
+            $data = array(
+                'id'      => $barang->id_barang,
+                'qty'     => 1,
+                'price'   => $barang->harga,
+                'name'    =>$barang->nama_barang
+        );
+        
+        $this->cart->insert($data);
+        redirect('fitur_categories/category');
+        }
 
     }
 
