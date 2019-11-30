@@ -36,6 +36,7 @@
                     </li>
                 </ul>
 
+<<<<<<< HEAD
                 <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
                 <?php
                     
@@ -52,6 +53,14 @@
                     
                 ?>
             </div>
+=======
+
+                <?php if($this->cart->total_items()) == '0' ?>{
+                    <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
+                }
+                
+
+>>>>>>> f0d21a0d9bf48dc83aef8866763fe9cf636d6a11
         </nav>
 
 

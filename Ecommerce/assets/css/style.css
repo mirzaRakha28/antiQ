@@ -45,8 +45,10 @@ a{
     margin-left: 100px;
     margin-top: 50px ;
 }
-.span{
-    margin: 3%;
+
+#gambar_produk{
+    margin: 0px 5px;
+    margin-top: 5px;
 }
 
 .search-box:hover > .search-txt {
