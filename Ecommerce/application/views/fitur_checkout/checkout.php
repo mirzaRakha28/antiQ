@@ -8,7 +8,7 @@
                         Formulir Alamat Pengirimian
                     </div>
                     <div class="card-body">
-                        <form action="">
+                        <form action="<?= base_url('fitur_confirm/confirm')?>">
                             <div class="form-group">
                                 <label for="">Nama</label>
                                 <input type="text" class="form-control" name="name" placeholder="Masukkan nama penerima">
@@ -25,7 +25,7 @@
                                 <small class="form-text text-danger">Nomor Telepon harus diisi.</small>
                             </div>
 
-                            <button class="btn btn-primary" type="submit">Simpan</button>
+                            <button  class="btn btn-primary" type="submit">Simpan</button>
                         </form>
                     </div>
                 </div>

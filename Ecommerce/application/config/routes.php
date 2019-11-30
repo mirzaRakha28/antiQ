@@ -53,3 +53,4 @@ $route['default_controller'] = 'dashboard';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['checkout'] = 'fitur_checkout/Checkout';
+$route['confirm'] = 'fitur_confirm/Confirm';
