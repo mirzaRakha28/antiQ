@@ -97,7 +97,7 @@
                                         <div class="coupon__box">
                                             <input type="text" placeholder="">
                                             <div class="ht__cp__btn">
-                                                <a href="#">enter</a>
+                                                <a href="<?= base_url('index.php/fitur_checkout/checkout')?>">enter</a>
                                             </div>
                                         </div>
                                     </div>

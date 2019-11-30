@@ -35,7 +35,7 @@
                 </ul>
 
 
-                <?php if($this->cart->total_items()) == '0' ?>{
+                <?php if($this->cart->total_items()== '0')  ?>{
                     <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
                 }
                  <?php if($this->cart->total_items() === 0) {?>
