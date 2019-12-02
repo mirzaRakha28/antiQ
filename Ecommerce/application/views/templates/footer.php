@@ -42,10 +42,22 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script src="<?= base_url()?>assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="<?= base_url()?>assets/vendor/jquery/jquery.min.js"></script>
     <script src="<?= base_url()?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="<?= base_url()?>assets/js/script.js"></script>
+    <script>
+        var tombol = document.getElementsByClassName('tambah_barang');
+        var angka  = document.getElementById('jml_brg');
+
+
+        tombol.onclick = function(event){
+                
+                    angka.innerHTML = ++jumlah;
+                
+        }
+    </script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@ $(document).ready(function(){
     function load_data(query)
     {
         $.ajax({
-            url:"<?php echo base_url(); ?>fitur_search/search/fetch",
+            url:"<?php echo base_url(); ?>fitur_search/search/fetch ?>",
             method:"POST",
             data:{query:query},
             success:function(data){
@@ -26,3 +26,4 @@ $(document).ready(function(){
         }
     });
 });
+

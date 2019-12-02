@@ -36,8 +36,16 @@
                     </li>
                 </ul>
 
-<<<<<<< HEAD
-                <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
+                
+                <a class="p-0 nav ml-auto w-100 justify-content-end " href="<?php if($this->session->isLogin !== true){ echo base_url(); } else { echo base_url('fitur_cart/cart'); } ?>">
+                        
+                        <img src="<?= base_url('assets/img/cart.png') ?>" alt="cart" width="24px">
+                </a>
+                <span class="sr-only">(current)</span>
+                <span class="badge badge-danger "  id="jml_brg"><script>var jumlah = 0</script></span>
+
+
+                <!-- <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a> -->
                 <?php
                     
                     // var_dump($this->session->isLogin); die();
@@ -53,14 +61,6 @@
                     
                 ?>
             </div>
-=======
-
-                <?php if($this->cart->total_items()) == '0' ?>{
-                    <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
-                }
-                
-
->>>>>>> f0d21a0d9bf48dc83aef8866763fe9cf636d6a11
         </nav>
 
 
