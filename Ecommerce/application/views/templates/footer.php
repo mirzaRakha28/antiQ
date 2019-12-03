@@ -31,8 +31,8 @@
                     <p class="visi">Subcribe to receive updates, acces<br>to    exclusive deals, and more.</p>
                     <form>
                         <div class="form-group">
-                             <input class="form-control form-control-sm mt-2" type="text" name="email4subs" placeholder="Enter Your Email">
-                             <button class="btn btn-primary mt-2" style="background-color: #730006; border: none">Subscribe</button>
+                            <input class="form-control form-control-sm mt-2" type="text" name="email4subs" placeholder="Enter Your Email">
+                            <button class="btn btn-primary mt-2" style="background-color: #730006; border: none">Subscribe</button>
                         </div>
                     </form>
                 </div>
@@ -42,9 +42,22 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script src="<?= base_url()?>assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="<?= base_url()?>assets/vendor/jquery/jquery.min.js"></script>
     <script src="<?= base_url()?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= base_url()?>assets/js/script.js"></script>
+    <script>
+        var tombol = document.getElementsByClassName('tambah_barang');
+        var angka  = document.getElementById('jml_brg');
 
+
+        tombol.onclick = function(event){
+                
+                    angka.innerHTML = ++jumlah;
+                
+        }
+    </script>
 </body>
 
 </html>

@@ -30,9 +30,9 @@
                             <?php echo $dt->harga?>
                         </p>
                         
-                        <?= anchor('fitur_categories/category/keranjang/'.$dt->id_barang,'<div class="btn btn-primary"> tambah </div>')?>
-                        
-                        <a href="#" class="btn btn-primary">Detail</a>
+                        <!-- <?= anchor($dt->id_barang,'<div class="btn btn-primary" id="tambah_barang"> tambah </div>')?> -->
+                        <a style="cursor: pointer;" class=" btn btn-primary text-white tambah_barang" > tambah </a>
+                        <a style="cursor: pointer;" class="btn btn-primary text-white" id="">Detail</a>
                     </div>
                 </div>
             </div>
