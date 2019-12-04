@@ -29,7 +29,7 @@
                         <a id="brand" class="nav-link" href="#"><img style="width:53px ; height: 22px" src="<?php echo base_url('assets/img/rev.png') ?>" alt="" class="logo"></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo site_url('fitur_whatnew/whatsnew') ?>">What's New</a>
+                        <a class="nav-link" href="<?php echo site_url('fitur_whatsnew/whatsnew') ?>">What's New</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo site_url('fitur_contact/contact') ?>">Contact Us</a>
@@ -57,6 +57,8 @@
                         else{
                             $this->load->view('templates/login');
                         }
+                    }else{
+                        $this->load->view('templates/login');
                     }
                     
                 ?>
