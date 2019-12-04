@@ -5,14 +5,14 @@ $(document).ready(function(){
     function load_data(query)
     {
         $.ajax({
-            url:"<?php echo base_url(); ?>fitur_search/search/fetch ?>",
-            method:"POST",
-            data:{query:query},
-            success:function(data){
+                url:"<?php echo base_url(); ?>index.php/fitur_search/search/fetch",
+                method:"POST",
+                data:{query:query},
+                success:function(data){
                 $('#result').html(data);
             }
         })
-    }   
+    }
 
     $('#search_text').keyup(function(){
         var search = $(this).val();
@@ -26,4 +26,3 @@ $(document).ready(function(){
         }
     });
 });
-
