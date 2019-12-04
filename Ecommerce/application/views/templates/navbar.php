@@ -13,7 +13,6 @@
         <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
         <div class="search-box navbar d-flex w-50 mr-auto">
 
-            <input type="text" class="search-txt" placeholder="Cari..">
             <a href="<?php echo site_url('fitur_search/search') ?>" class="navbar d-flex w-50 mr-auto search-btn"><i class="fas fa-search"></i></a>
 
         </div>    
