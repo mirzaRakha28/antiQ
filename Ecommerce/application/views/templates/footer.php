@@ -1,6 +1,6 @@
-    <footer class="text-white foot p-5" style="background: #00020A;">
+    <footer class="text-white foot p-5" style="background: #00020A; ">
 
-        <div class="row">
+        <div class="row" >
 
             <div class="col-sm-4">
                 <div class="mrAuto first-last">
