@@ -1,4 +1,3 @@
-
 <body id="page-top" style="background: #FFFAFA;">
 
 <!-- Page Wrapper -->
@@ -35,20 +34,16 @@
                     </li>
                 </ul>
 
-                
-                <a class="p-0 nav ml-auto w-100 justify-content-end " href="<?php if($this->session->isLogin !== true){ echo base_url(); } else { echo base_url('fitur_cart/cart'); } ?>">
-                        
-                        <img src="<?= base_url('assets/img/cart.png') ?>" alt="cart" width="24px">
-                </a>
-                <span class="sr-only">(current)</span>
-                <span class="badge badge-danger "  id="jml_brg"><script>var jumlah = 0</script></span>
-
-
-                <!-- <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a> -->
+            
+                <?php $keranjang =  $this->cart->total_items();?>
+                <?php if($keranjang == 0){ ?>
+                    <?= anchor('fitur_cart/cart/keranjang','<i class="fas fa-shopping-cart"></i>')?>
+                    <?php }else{?>
+                    <?= anchor('fitur_cart/cart/keranjang','<i class="fas fa-shopping-cart"></i>')?>
+                    <?php }?>
                 <?php
                     
                     // var_dump($this->session->isLogin); die();
-
                     if(isset($this->session->isLogin)){
                         if($this->session->isLogin){
                             $this->load->view('templates/non_login');
@@ -57,10 +52,8 @@
                             $this->load->view('templates/login');
                         }
                     }else{
-                        $this->load->view('templates/login');
-                    }
-                    
+                            $this->load->view('templates/login');
+                        }                    
                 ?>
             </div>
         </nav>
-

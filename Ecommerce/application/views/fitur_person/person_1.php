@@ -57,7 +57,7 @@
                             <hr>
                         </div>
                         <div class="text-center costumer_log" style= "float: right">
-                            <a href="">Old Custumer</a>
+                            <a href="<?php echo site_url('fitur_person/person_0') ?>">Old Custumer</a>
                             <hr>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                         <div class="col-lg">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">Login Page</h1>
+                                    <h1 class="h4 text-gray-900 mb-4">Register Page</h1>
                                 </div>
 
                                 <?= $this->session->flashdata('message'); ?>

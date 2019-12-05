@@ -53,18 +53,18 @@
 					<div class="text-center">
 						<h1 class="h4 text-gray-900 mb-4">Contact Us!</h1>
 					</div>
-					<form class="user" method="post" action="<?= base_url('index.php/fitur_person/person_0/registration'); ?>">
+					<form class="user" method="post" >
 		<div class="form-group">
 			<input type="text" class="form-control form-control-user" id="name" name="name" placeholder="Full name" value="<?= set_value('name'); ?>">
-			<?= form_error('name', '<small class="text-danger pl-3">', '</small>'); ?>
+			
 		</div>
 		<div class="form-group">
 			<input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Email Address" value="<?= set_value('email'); ?>">
-			<?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+			
 		</div>
 		<div class="form-group">
 			<input type="text" class="form-control form-control-user" id="phone" name="phone" placeholder="Phone" value="<?= set_value('phone'); ?>">
-			<?= form_error('phone', '<small class="text-danger pl-3">', '</small>'); ?>
+			
 		</div>
 			<div class="mb-3">
 				<textarea class="form-control is-invalid" id="message" placeholder="Please Enter Your Message " required></textarea>

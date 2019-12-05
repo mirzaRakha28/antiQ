@@ -74,7 +74,7 @@
                             
                         ];
                         $this->session->isLogin = true;
-                        redirect('fitur_admin/dasboard_admin');
+                        redirect('dashboard');
                     } else {
                         redirect('fitur_person/person_0');
                     }

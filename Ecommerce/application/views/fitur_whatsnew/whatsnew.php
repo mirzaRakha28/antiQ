@@ -23,7 +23,7 @@
                                 <span class="text-center"><a><?php echo $dt->keterangan?></a></span>
                                 <div class="card-footer pb-0">
                                     <div class="row mb-0">
-                                        <span class="float-left"><strong><?php echo $dt->harga?></strong></span>
+                                        <span class="float-left"><strong>Rp <?php echo number_format($dt->harga,0,',','.')?></strong></span>
                                     </div>
                                     <div class="text-center">
                                         <a style="cursor: pointer;" class=" btn btn-primary text-white tambah_barang" > tambah </a>

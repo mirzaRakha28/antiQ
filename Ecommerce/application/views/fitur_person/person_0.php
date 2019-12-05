@@ -56,7 +56,7 @@
                             <hr>
                         </div>
                         <div class="text-center costumer_log" style= "float: right">
-                            <a href="">Old Custumer</a>
+                            <a href="<?php echo site_url('fitur_person/person_0') ?>">Old Custumer</a>
                             <hr>
                         </div>
                     </div>

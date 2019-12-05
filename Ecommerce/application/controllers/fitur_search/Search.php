@@ -31,7 +31,7 @@ class Search extends CI_Controller {
 						<div class="col-lg-4 col-md-3 mb-4 float-left">
                         <div class="card card-ecommerce">
                         <div class="view overlay">
-						<img src="<?php echo site_url(uploads/'.$row->gambar.')?>" style="width: 419px; height: 169.98px" alt="">
+						<img src="'.base_url("uploads/.$row->gambar.").'" style="width: 419px; height: 169.98px" alt="">
 							<a>
 								<div class="mask rgba-white-slight"></div>
 							</a>

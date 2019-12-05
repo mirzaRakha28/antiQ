@@ -1,135 +1,77 @@
+    <div class="pb-5">
+        <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
 
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->  
+            <!-- Shopping cart table -->
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col" class="border-0 bg-light">
+                        <div class="p-2 px-3 text-uppercase">Product</div>
+                    </th>
+                    <th scope="col" class="border-0 bg-light">
+                        <div class="py-2 text-uppercase">Price</div>
+                    </th>
+                    <th scope="col" class="border-0 bg-light">
+                        <div class="py-2 text-uppercase">Quantity</div>
+                    </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($this->cart->contents() as $items){ ?>
+                    
+                        <tr>
+                    <th scope="row" class="border-0">
+                        <div class="p-2">
+                        <img src="<?= base_url('')?>" alt="" width="70" class="img-fluid rounded shadow-sm">
+                        <div class="ml-3 d-inline-block align-middle">
+                            <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle"><?=  $items['name']?></a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
+                        </div>
+                        </div>
+                    </th>
+                    <td class="border-0 align-middle"><strong><?= number_format($items['price'],0,',','.') ?></strong></td>
+                    <td class="border-0 align-middle">
+                        <a href="" class="text-dark"><i class="fas fa-minus-circle"></i></a>
+                        <strong class= "px-1"><?= $items['qty'] ?></strong>
+                        <a href="" class="text-dark"><i class="fas fa-plus-circle"></i></a>
+                    </td>
+                    </tr>
+                    <tr>
 
-   
-        <!-- End Offset Wrapper -->
-        <!-- Start Bradcaump area -->
-        <!-- End Bradcaump area -->
-        <!-- cart-main-area start -->
-        <div style="margin-top: 50px" class="cart-main-area ptb--100 bg__white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <form action="#">               
-                            <div class="table-content table-responsive">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th class="product-thumbnail">products</th>
-                                            <th class="product-name">name of products</th>
-                                            <th class="product-price">Price</th>
-                                            <th class="product-quantity">Quantity</th>
-                                            <th class="product-subtotal">Total</th>
-                                            <th class="product-remove">Remove</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="product-thumbnail"><a href="#"><img style="width:280px" src="assets/img/1.png" alt="product img" /></a></td>
-                                            <td class="product-name"><a href="#">New Dress For Sunday</a>
-                                                <ul type="none" class="pro__prize">
-                                                    <li>$75.2</li>
-                                                </ul>
-                                            </td>
-                                            <td class="product-price"><span class="amount">£165.00</span></td>
-                                            <td class="product-quantity"><input type="number" value="1" /></td>
-                                            <td class="product-subtotal">£165.00</td>
-                                            <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="product-thumbnail"><a href="#"><img style="width:280px" src="assets/img/2.png"alt="product img" /></a></td>
-                                            <td class="product-name"><a href="#">New Dress For Sunday</a>
-                                                <ul type="none"   class="pro__prize">
-                                                    <li>$75.2</li>
-                                                </ul>
-                                            </td>
-                                            <td class="product-price"><span class="amount">£50.00</span></td>
-                                            <td class="product-quantity"><input type="number" value="1" /></td>
-                                            <td class="product-subtotal">£50.00</td>
-                                            <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="product-thumbnail"><a href="#"><img  style="width:280px" src="assets/img/3.png" alt="product img" /></a></td>
-                                            <td class="product-name"><a href="#">New Dress For Sunday</a>
-                                                <ul type="none"  class="pro__prize">
-                                                    <li>$75.2</li>
-                                                </ul>
-                                            </td>
-                                            <td class="product-price"><span class="amount">£50.00</span></td>
-                                            <td class="product-quantity"><input type="number" value="1" /></td>
-                                            <td class="product-subtotal">£50.00</td>
-                                            <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="product-thumbnail"><a href="#"><img  style="width:280px" src="assets/img/4.png" alt="product img" /></a></td>
-                                            <td class="product-name"><a href="#">New Dress For Sunday</a>
-                                                <ul type="none" class="pro__prize">
-                                                    <li>$75.2</li>
-                                                </ul>
-                                            </td>
-                                            <td class="product-price"><span class="amount">£50.00</span></td>
-                                            <td class="product-quantity"><input type="number" value="1" /></td>
-                                            <td class="product-subtotal">£50.00</td>
-                                            <td class="product-remove"><a href="#"><i class="icon-trash icons"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="buttons-cart--inner">
-                                        <div class="buttons-cart">
-                                            <a href="#">Continue Shopping</a>
-                                        </div>
-                                        <div class="buttons-cart checkout--btn">
-                                            <a href="#">update</a>
-                                            <a href="#">checkout</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <div class="ht__coupon__code">
-                                        <span>enter your discount code</span>
-                                        <div class="coupon__box">
-                                            <input type="text" placeholder="">
-                                            <div class="ht__cp__btn">
-                                                <a href="#">enter</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 col-xs-12 smt-40 xmt-40">
-                                    <div class="htc__cart__total">
-                                        <h6>cart total</h6>
-                                        <div class="cart__desk__list">
-                                            <ul type="none" class="cart__desc">
-                                                <li>cart total</li>
-                                                <li>tax</li>
-                                                <li>shipping</li>
-                                            </ul>
-                                            <ul type="none" class="cart__price">
-                                                <li>$909.00</li>
-                                                <li>$9.00</li>
-                                                <li>0</li>
-                                            </ul>
-                                        </div>
-                                        <div class="cart__total">
-                                            <span>order total</span>
-                                            <span>$918.00</span>
-                                        </div>
-                                        <ul type="none" class="payment__btn">
-                                            <li class="active"><a href="#">payment</a></li>
-                                            <li><a href="#">continue shopping</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </form> 
-                    </div>
-                </div>
+                    <?php } ?>  
+                </tbody>
+                </table>
             </div>
+            <!-- End -->
+            <a href="<?=  base_url('index.php/fitur_cart/cart/hapus_data') ?>"> 
+                <button id="button-addon3" type="button" class="btn btn-outline-dark px-4 mr-2 ml-3 border-1" style="outline-color:
+                #730006">Delete</button>    
+            </a>
+            <button id="button-addon3" type="button" class="btn btn-dark px-4 no-border" style="background-color: #730006">Update Cart</button>
+            </div>
+
+        </div> 
+        <div class="row rounded">
+            <span class="col-sm border border-dark">
+            <div class="px-2 py-3 text-uppercase font-weight-bold">Cart Totals</div>
+            <div class="p-2">
+                <ul class="list-unstyled mb-4">
+                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>Rp. <?= number_format($this->cart->total(),0,',','.') ?></strong></li>
+                <?php $pajak = $this->cart->total()*0.1; ?>
+                <?php $pajak = $pajak + $this->cart->total(); ?>
+                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+                    <h5 class="font-weight-bold">Rp.  <?= number_format($pajak,0,',','.') ?></h5>
+                </li>
+                </ul>
+                <div class="text-right mb-3">
+                <a href="<?php echo site_url('fitur_checkout/checkout') ?>" class="btn btn-dark border-0 py-2" style="background-color: #730006">Procceed to checkout</a>
+                </div>
+                
+            </div>
+            </span>
         </div>
+
+        </div>
+    </div>
