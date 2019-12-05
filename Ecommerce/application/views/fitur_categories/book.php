@@ -1,21 +1,23 @@
+
 <div class="row m-5">
     <div class=" sidebar-menu mt-4 ml-4 col-2">
         <div class="panel-heading">
             <h3 class="h4 panel-title">Categories</h3>
         </div>
         <div>
-            <a href="<?= base_url('index.php/fitur_categories/category/home_utensils') ?>" class="nav-link  "><span>Home Utensils</span><span class="badge badge-secondary"></span></a>
+           <a href="<?= base_url('index.php/fitur_categories/category/home_utensils') ?>" class="nav-link  "><span>Home Utensils</span><span class="badge badge-secondary"></span></a>
             <a href="<?= base_url('index.php/fitur_categories/category/fashion') ?>" class="nav-link  "><span>Fasihon</span><span class="badge badge-secondary"></span></a>
-            <a href="<?= base_url('index.php/fitur_categories/category/book') ?>" class="nav-link  "><span>Book</span><span class="badge badge-secondary"></span></a>
+            <a href="<?= base_url('index.php/fitur_categories/category/book') ?>" class="nav-link font-weight-bold" style="color:#730006"><span>Book</span><span class="badge badge-secondary"></span></a>
             <a href="<?= base_url('index.php/fitur_categories/category/electronic') ?>" class="nav-link  "><span>Electronic</span><span class="badge badge-secondary"></span></a>
             <a href="<?= base_url('index.php/fitur_categories/category/phone') ?>" class="nav-link  "><span>Phone</span><span class="badge badge-secondary"></span></a>
-            <a href="<?= base_url('index.php/fitur_categories/category/vehicle') ?>" class="nav-link  "><span>Vehicle</span><span class="badge badge-secondary"></span></a>   
+            <a href="<?= base_url('index.php/fitur_categories/category/vehicle') ?>" class="nav-link  "><span>Vehicle</span><span class="badge badge-secondary"></span></a> 
+            
         </div>
                     
     </div>
 
     <div class="col-9">
-        <?php foreach($barang as $dt) :?>
+        <?php foreach($book as $dt) :?>
             <div class="span"> 
                 <div class="card text-center " style="width: 16rem; float: left; margin: 16px;">
                     <img src="<?php echo base_url().'/uploads/'.$dt->gambar?>" class="card-img-top" style="width: 250px;
