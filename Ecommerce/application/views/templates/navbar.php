@@ -1,4 +1,3 @@
-
 <body id="page-top" style="background: #FFFAFA;">
 
 <!-- Page Wrapper -->
@@ -13,7 +12,6 @@
         <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
         <div class="search-box navbar d-flex w-50 mr-auto">
 
-            <input type="text" class="search-txt" placeholder="Cari..">
             <a href="<?php echo site_url('fitur_search/search') ?>" class="navbar d-flex w-50 mr-auto search-btn"><i class="fas fa-search"></i></a>
 
         </div>    
@@ -29,7 +27,7 @@
                         <a id="brand" class="nav-link" href="#"><img style="width:53px ; height: 22px" src="<?php echo base_url('assets/img/rev.png') ?>" alt="" class="logo"></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo site_url('fitur_whatnew/whatsnew') ?>">What's New</a>
+                        <a class="nav-link" href="<?php echo site_url('fitur_whatsnew/whatsnew') ?>">What's New</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo site_url('fitur_contact/contact') ?>">Contact Us</a>
@@ -37,12 +35,15 @@
                 </ul>
 
             
-
-                <a href="<?php echo site_url('fitur_cart/cart') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
+                <?php $keranjang =  $this->cart->total_items();?>
+                <?php if($keranjang == 0){ ?>
+                    <?= anchor('fitur_cart/cart/keranjang','<i class="fas fa-shopping-cart"></i>')?>
+                    <?php }else{?>
+                    <?= anchor('fitur_cart/cart/keranjang','<i class="fas fa-shopping-cart"></i>')?>
+                    <?php }?>
                 <?php
                     
                     // var_dump($this->session->isLogin); die();
-
                     if(isset($this->session->isLogin)){
                         if($this->session->isLogin){
                             $this->load->view('templates/non_login');
@@ -52,9 +53,7 @@
                         }
                     }else{
                             $this->load->view('templates/login');
-                        }
-                    
+                        }                    
                 ?>
             </div>
         </nav>
-

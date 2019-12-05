@@ -1,4 +1,5 @@
 <div class="row m-5">
+
     <div class=" sidebar-menu mt-4 ml-4 col-2">
         <div class="panel-heading">
             <h3 class="h4 panel-title">Categories</h3>
@@ -28,12 +29,13 @@
                         <p>
                             Price: Rp<?php echo number_format($dt->harga,0,',','.')?>
                         </p>
+
                        <div style="padding: 10px"> 
                             <?= anchor('fitur_cart/cart/add_keranjang/'.$dt->id_barang,'<div class="btn btn-primary btn-block" style="margin:auto; background-color: #730006; outline-style: no-outline;" id="tambah_barang">Add to Cart</div>')?>
                             <a style="cursor: pointer; margin:6px 0px ;  " class="btn btn-outline-dark btn-block" id="">Detail</a>
                         </div>
                         <!-- <a style="cursor: pointer;" class=margin" btn btn-primary text-white tambah_barang" > tambah </a> -->
-                        
+              
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<div class="container-contact100">
+<!-- <div class="container-contact100">
 
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
@@ -41,4 +41,45 @@
 
 
 	<div id="dropDownSelect1"></div>
-	
+	 -->
+
+	 <div class="container">
+
+<div class="card o-hidden border-0 shadow-lg my-5 col-lg-8 mx-auto">
+		<!-- Nested Row within Card Body -->
+		<div class="row">
+			<div class="col-lg">
+				<div class="p-5">
+					<div class="text-center">
+						<h1 class="h4 text-gray-900 mb-4">Contact Us!</h1>
+					</div>
+					<form class="user" method="post" >
+		<div class="form-group">
+			<input type="text" class="form-control form-control-user" id="name" name="name" placeholder="Full name" value="<?= set_value('name'); ?>">
+			
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Email Address" value="<?= set_value('email'); ?>">
+			
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control form-control-user" id="phone" name="phone" placeholder="Phone" value="<?= set_value('phone'); ?>">
+			
+		</div>
+			<div class="mb-3">
+				<textarea class="form-control is-invalid" id="message" placeholder="Please Enter Your Message " required></textarea>
+				<div class="invalid-feedback">
+				Please enter a message.
+				</div>
+			</div>
+		<button type="submit" class="btn btn-danger btn-user btn-block">
+			Send Us Your Message
+		</button>
+	</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div> 

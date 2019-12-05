@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="login ">
     <div class="text-center ">
         <div class="costumer">    
@@ -12,25 +12,85 @@
             </div>
         </div>
         
-    <div class="text-center" >
-        <h2 class="text-judul">
+    <div class="text-center"  >
+    <div style="width:100px;">
+    <h2 class="text-judul">
             <b>Login Account</b>
         </h1>
         <form  class="user" method="post" action="<?= base_url('index.php/fitur_person/person_0'); ?>" >
-            <div class="form-group input_data">
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-                <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
-            </div>
-            <div class="form-group input_data">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
-                <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
+            <div  >
+                <div class="form-group input_data">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                    <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+                <div class="form-group input_data">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                    <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
 
+                </div>
+                <div class="form-group login_submit">
+                    <button type="submit" class="btn btn-primary login_submit">Login</button>
+                </div>
             </div>
-            <div class="form-group login_submit">
-                <button type="submit" class="btn btn-primary login_submit">Login</button>
-            </div>
+    </div>
+        
         </form>
+        
         </div>
     </div>
     </div>
-</div>
+</div> -->
+
+
+<div class="container">
+    
+    <!-- Outer Row -->
+    <div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5 col-lg-8 mx-auto">
+        <div class="card-body p-0">
+                <div class="text-center ">
+                    <div class="costumer">    
+                        <div class="text-center costumer_log "style= "float: left   ">
+                            <a href="<?php echo site_url('fitur_person/person_0/registration') ?>">New Costumer</a>
+                            <hr>
+                        </div>
+                        <div class="text-center costumer_log" style= "float: right">
+                            <a href="<?php echo site_url('fitur_person/person_0') ?>">Old Custumer</a>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h1 class="h4 text-gray-900 mb-4">Login Page</h1>
+                                </div>
+
+                                <?= $this->session->flashdata('message'); ?>
+
+                                <form  class="user" method="post" action="<?= base_url('index.php/fitur_person/person_0'); ?>" >
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Enter Email Address..." value="<?= set_value('email'); ?>">
+                                        <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
+                                        <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                        Login
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div> 
