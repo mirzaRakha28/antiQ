@@ -52,14 +52,17 @@
                     'email' => htmlspecialchars($email),
                     'pass' => password_hash($pass, PASSWORD_DEFAULT),
                     'alamat' => htmlspecialchars($alamat)
-                                    ];
+                    // 'role_id' => 2,
+                    // 'is_active' => 0,
+                    // 'date_created' => time()
+                ];
                 $this->db->insert('user', $data); // insert data to database user
                 $this->index();
             }
 
         }
 
-        public function login_users(){
+        private function login_users(){
             $email = $this->input->post('email');
             $password = $this->input->post('password');
             $user = $this->db->get_where('user', ['email' => $email])->row_array();
@@ -71,7 +74,7 @@
                             
                         ];
                         $this->session->isLogin = true;
-                        redirect('dashboard');
+                        redirect('fitur_admin/dasboard_admin');
                     } else {
                         redirect('fitur_person/person_0');
                     }

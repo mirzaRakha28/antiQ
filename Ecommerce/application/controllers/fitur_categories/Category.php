@@ -15,7 +15,7 @@
                 'id'      => $barang->id_barang,
                 'qty'     => 1,
                 'price'   => $barang->harga,
-                'name'    => $barang->nama_barang
+                'name'    =>$barang->nama_barang
         );
         
         $this->cart->insert($data);
