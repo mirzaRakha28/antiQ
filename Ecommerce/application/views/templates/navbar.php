@@ -23,7 +23,7 @@
                         <a class="nav-link " href="<?php echo site_url('dashboard') ?>">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo site_url('fitur_categories/category') ?>">Categories</a>
+                        <a class="nav-link" href="<?php echo site_url('fitur_categories/category') ?>">Products</a>
                     </li>
                     <li class="nav-item active">
                         <a id="brand" class="nav-link" href="#"><img style="width:53px ; height: 22px" src="<?php echo base_url('assets/img/rev.png') ?>" alt="" class="logo"></a>
