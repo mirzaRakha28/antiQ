@@ -16,10 +16,6 @@
                 return array();
             }
         }
-        public function getData($id){
-            $query = "SELECT * FROM tb_barang where id_barang = '".$id."'";
-            return $this->db->query($query)->row();
-        }
 
 
     }
