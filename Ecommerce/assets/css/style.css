@@ -62,3 +62,7 @@ a{
 .gambar{
     padding: 3rem 2rem;
 }
+.jumbotron{
+    width: 100;
+    /* background-image:url('assets/img/jumbotron.png') ; */
+}

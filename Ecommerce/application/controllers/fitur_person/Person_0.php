@@ -52,11 +52,9 @@
                     'email' => htmlspecialchars($email),
                     'pass' => password_hash($pass, PASSWORD_DEFAULT),
                     'alamat' => htmlspecialchars($alamat)
-                    // 'role_id' => 2,
-                    // 'is_active' => 0,
-                    // 'date_created' => time()
+                    
                 ];
-                $this->db->insert('user', $data); // insert data to database user
+                $this->db->insert('user', $data); 
                 $this->index();
             }
 
@@ -87,7 +85,7 @@
         public function logout()
         {
             $this->session->isLogin = false;
-            $this->index();# code...
+            $this->index();
         }
     }
 

@@ -1,7 +1,7 @@
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="<?php echo base_url('assets/img/jumbotron.png') ?>" alt="First slide">
+<img class="d-block  float-sm-left m-0 m-r-0" style="width: 1349px" src="<?php echo base_url('assets/img/jumbotron.png') ?>" alt="First slide">                
             </div>
         </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -12,7 +12,11 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-    </div>
+    </div> -->
+
+
+
+        <img class="d-block  float-sm-left m-0 m-r-0" style="width: 1315px" src="<?php echo base_url('assets/img/jumbotron.png') ?>" alt="First slide">
 
     <div class="text-center" style="margin: 30px;">
         <h1>Today's deal</h1>

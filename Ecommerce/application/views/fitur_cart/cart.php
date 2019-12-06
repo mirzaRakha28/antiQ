@@ -22,10 +22,10 @@
                 <tbody>
                     <?php foreach ($this->cart->contents() as $items){ ?>
                     
-                        <tr>
+                    <tr>
                     <th scope="row" class="border-0">
                         <div class="p-2">
-                        <img src="<?= base_url('')?>" alt="" width="70" class="img-fluid rounded shadow-sm">
+                        <img src="<?= base_url().'/uploads/'.$items['gambar']?>" alt="" width="70" class="img-fluid rounded shadow-sm">
                         <div class="ml-3 d-inline-block align-middle">
                             <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle"><?=  $items['name']?></a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
                         </div>
@@ -33,9 +33,7 @@
                     </th>
                     <td class="border-0 align-middle"><strong><?= number_format($items['price'],0,',','.') ?></strong></td>
                     <td class="border-0 align-middle">
-                        <a href="" class="text-dark"><i class="fas fa-minus-circle"></i></a>
                         <strong class= "px-1"><?= $items['qty'] ?></strong>
-                        <a href="" class="text-dark"><i class="fas fa-plus-circle"></i></a>
                     </td>
                     </tr>
                     <tr>

@@ -37,10 +37,12 @@
             
                 <?php $keranjang =  $this->cart->total_items();?>
                 <?php if($keranjang == 0){ ?>
-                    <?= anchor('fitur_cart/cart/keranjang','<i class="fas fa-shopping-cart"></i>')?>
+                    <a href="<?php echo site_url('fitur_cart/cart/keranjang') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-cart-plus"></i></a>
                     <?php }else{?>
-                    <?= anchor('fitur_cart/cart/keranjang','<i class="fas fa-shopping-cart"></i>')?>
+                        <a href="<?php echo site_url('fitur_cart/cart/keranjang') ?>" class="nav ml-auto w-100 justify-content-end"><i class="fas fa-shopping-cart"></i></a>
                     <?php }?>
+                    
+               
                 <?php
                     
                     // var_dump($this->session->isLogin); die();

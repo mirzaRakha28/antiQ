@@ -64,6 +64,7 @@
                                     alert("Selamat!!! Transaksi Berhasil");
                                     }
                                     </script>
+                                    
                             </div>
                         </div>
                     </div>
